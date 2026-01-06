@@ -11,7 +11,13 @@ const SLIDER_IMAGES = [
   'https://2mtrfo5jo8mxmvit.public.blob.vercel-storage.com/frontpage-slider/frontpage%20%285%29.jpg',
 ];
 
-export default function ImageSlider() {
+type ImageSliderProps = {
+  className?: string;
+  rounded?: boolean;
+  showShadow?: boolean;
+};
+
+export default function ImageSlider({ className, rounded = true, showShadow = true }: ImageSliderProps) {
   const [slides] = useState<string[]>(SLIDER_IMAGES);
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
@@ -49,8 +55,17 @@ export default function ImageSlider() {
     );
   }
 
+  const containerClasses = [
+    'relative w-full group',
+    className ?? 'h-64 md:h-80',
+    rounded ? 'rounded-lg overflow-hidden' : '',
+    showShadow ? 'shadow-xl' : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
-    <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden shadow-xl group">
+    <div className={containerClasses}>
       {/* Slides */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (

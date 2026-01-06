@@ -51,12 +51,12 @@ export default async function GalleryIndexPage() {
               <Link
                 key={year}
                 href={`/gallery/${year}`}
-                className="block bg-white border-2 border-blue-200 rounded-xl p-8 shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center group"
+                className="block bg-white border-2 border-pink-200 rounded-xl p-8 shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center group"
               >
-                <div className="text-4xl font-bold text-blue-900 mb-2">
+                <div className="text-4xl font-bold text-pink-900 mb-2">
                   {year}
                 </div>
-                <div className="text-gray-600 group-hover:text-blue-700 transition-colors">
+                <div className="text-gray-600 group-hover:text-pink-700 transition-colors">
                   View Photos →
                 </div>
               </Link>

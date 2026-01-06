@@ -4,11 +4,11 @@ export type Wave = {
   location?: string;
 };
 
-export const wavesDecided = true; // Set to true when waves are finalized
+export const wavesDecided = false; // Set to true when waves are finalized
 
 export const waveTimes = [
   { wave: "AM", time: "8:00 AM", color: "green" },
-  { wave: "PM", time: "3:00 PM", color: "blue" },
+  { wave: "PM", time: "3:00 PM", color: "pink" },
 ];
 
 export const waves: Wave[] = [

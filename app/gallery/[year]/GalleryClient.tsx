@@ -23,7 +23,7 @@ export default function GalleryClient({ year, images }: GalleryClientProps) {
         <main className="max-w-7xl mx-auto px-4 py-10">
           <Link
             href="/gallery"
-            className="inline-flex items-center gap-2 mb-8 px-6 py-3 bg-white border-2 border-blue-200 text-blue-700 hover:border-blue-400 hover:text-blue-900 hover:shadow-lg font-semibold rounded-lg transition-all duration-200"
+            className="inline-flex items-center gap-2 mb-8 px-6 py-3 bg-white border-2 border-pink-200 text-pink-700 hover:border-pink-400 hover:text-pink-900 hover:shadow-lg font-semibold rounded-lg transition-all duration-200"
           >
             <svg
               className="w-5 h-5"
@@ -60,7 +60,7 @@ export default function GalleryClient({ year, images }: GalleryClientProps) {
       <main className="max-w-7xl mx-auto px-4 py-10">
         <Link
           href="/gallery"
-          className="inline-flex items-center gap-2 mb-8 px-6 py-3 bg-white border-2 border-blue-200 text-blue-700 hover:border-blue-400 hover:text-blue-900 hover:shadow-lg font-semibold rounded-lg transition-all duration-200"
+          className="inline-flex items-center gap-2 mb-8 px-6 py-3 bg-white border-2 border-pink-200 text-pink-700 hover:border-pink-400 hover:text-pink-900 hover:shadow-lg font-semibold rounded-lg transition-all duration-200"
         >
           <svg
             className="w-5 h-5"
@@ -82,7 +82,7 @@ export default function GalleryClient({ year, images }: GalleryClientProps) {
             <button
               key={index}
               onClick={() => setSelectedImage(image)}
-              className="relative aspect-square overflow-hidden rounded-lg border-2 border-blue-200 hover:border-blue-400 hover:shadow-xl transition-all cursor-pointer group"
+              className="relative aspect-square overflow-hidden rounded-lg border-2 border-pink-200 hover:border-pink-400 hover:shadow-xl transition-all cursor-pointer group"
             >
               <Image
                 src={image}
