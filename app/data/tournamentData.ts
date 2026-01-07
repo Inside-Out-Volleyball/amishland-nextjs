@@ -14,4 +14,5 @@ export const tournamentData = {
   registrationDisplay: "www.advancedeventsystems.com",
   rules: "Tournament will follow current AAU Rules",
   entryFeesPayableTo: "Inside Out Volleyball",
+  hotelUrl: "https://app.eventconnect.io/events/38403/hotels?nav=hidden"
 };

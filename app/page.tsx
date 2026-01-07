@@ -21,14 +21,14 @@ export default function Home() {
           <Card title="Schedule" link="/tournament-information#schedule" />
           <Card
             title="Hotel Information"
-            link="https://www.teamtravelsource.com/volleyball_lander/lakeshorevolleyfest/"
+            link={`${tournamentData.hotelUrl}`}
           />
           <Card
             title="Tickets/Admission"
             link="https://iplexsports.com/event/dli94fTSUUPUj5ko"
           />
           <Card title="Locations" link="/locations" />
-          <Card title="Livestream" link="/livestream" />
+          {/* <Card title="Livestream" link="/livestream" /> */}
         </div>
 
         {/* Tournament Details */}
@@ -112,16 +112,13 @@ export default function Home() {
 
               <div className="max-w-4xl mx-auto space-y-4 text-base leading-relaxed text-gray-700 bg-pink-50 p-6 rounded-lg">
                 <p>
-                  The AAU Super Regional is a National AAU Sponsored Event.
-                  Winners in each age division will have all or part of their
-                  fee waived for AAU Nationals. The refund is a sliding scale
-                  100%-30% based on number of teams entered in a division. 16
-                  teams equals full refund, any less than 16 teams would be paid
-                  on a percentage basis.
-                </p>
-                <p>
-                  Inside Out will guarantee a full entry fee to the 1st place
-                  team in each Open division.
+                  This AAU Grand Prix is a National AAU Sponsored Event. Winners
+                  in each age division will have all or part of their fee waived
+                  for AAU Nationals, the West Coast Championships, or the
+                  Volleyball Festival. Reimbursement will be a sliding scale
+                  based on 16 teams in each age group. If the first place team
+                  has already won a free entry OR does not accept the free
+                  entry, the free entry will go to the second place team.
                 </p>
                 <ul className="list-disc list-inside space-y-2">
                   <li>

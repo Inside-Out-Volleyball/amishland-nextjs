@@ -9,11 +9,11 @@ type PageHeaderProps = {
 
 export default function PageHeader({ title, subtitle, withSlider = false }: PageHeaderProps) {
   return (
-    <header className={`relative overflow-hidden text-white shadow-lg ${withSlider ? 'bg-gray-900' : 'bg-linear-to-r from-pink-600 via-pink-700 to-pink-800'}`}>
+    <header className={`relative overflow-hidden text-white shadow-lg ${withSlider ? 'bg-gray-900' : 'bg-linear-to-r from-pink-400 via-pink-600 to-pink-800'}`}>
       {withSlider ? (
         <>
           <div className="absolute inset-0" aria-hidden="true">
-            <ImageSlider className="h-full min-h-[340px] md:min-h-[440px]" rounded={false} showShadow={false} />
+            <ImageSlider className="h-full min-h-85 md:min-h-110" rounded={false} showShadow={false} />
           </div>
           <div className="absolute inset-0 bg-linear-to-b from-black/55 via-black/25 to-black/60" aria-hidden="true"></div>
         </>
