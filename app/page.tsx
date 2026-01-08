@@ -25,7 +25,7 @@ export default function Home() {
           />
           <Card
             title="Tickets/Admission"
-            link="https://iplexsports.com/event/dli94fTSUUPUj5ko"
+            link="https://iplexsports.com/event/B7JjrCbAJzMRVcDH"
           />
           <Card title="Locations" link="/locations" />
           {/* <Card title="Livestream" link="/livestream" /> */}

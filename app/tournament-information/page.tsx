@@ -161,6 +161,77 @@ export default function TournamentInformation() {
           </div>
         </section>
 
+        {/* Hotel Section */}
+        <section
+          id="hotel"
+          className="bg-white border-2 border-pink-200 rounded-xl shadow-xl p-8 mb-12 scroll-mt-20"
+        >
+          <h2 className="text-2xl md:text-3xl font-bold text-pink-900 mb-6">
+            Hotel Information
+          </h2>
+          <div className="space-y-4 text-gray-700">
+            <ul className="list-disc list-outside space-y-2 text-gray-700 pl-5">
+              <li>
+                Teams attending the Amishland Grand Prix are encouraged to book
+                their hotel accommodations through the official housing provider
+                EventConnect.
+              </li>
+              <li>
+                EventConnect has contracted discounted accommodations near the
+                tournament location and on average save teams 24% on hotel
+                costs. Through the EventConnect online booking platform, teams
+                can create a complimentary room block with individual
+                reservations at various properties.{" "}
+              </li>
+              <li>
+                Teams traveling over <strong>75 miles</strong> for the event are encouraged to
+                book at least 5 rooms per team by families and friends.
+              </li>
+              <li>
+                For assistance holding a block or making reservations, please
+                contact{" "}
+                <a
+                  href="mailto:Events@EventConnect.io"
+                  className="text-pink-600 hover:text-pink-800 hover:underline"
+                >
+                  Events@EventConnect.io
+                </a>{" "}
+                or for assistance updating a reservation, visit{" "}
+                <a
+                  href="https://eventconnectsports.com/support/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-pink-600 hover:text-pink-800 hover:underline"
+                >
+                  eventconnectsports.com/support
+                </a>
+              </li>
+            </ul>
+            <a
+              href={tournamentData.hotelUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-pink-600 text-white font-semibold hover:bg-pink-700 transition-colors mt-6"
+            >
+              Book Hotel Accommodations
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </a>
+          </div>
+        </section>
+
         {/* Schedule Section */}
         <section
           id="schedule"
