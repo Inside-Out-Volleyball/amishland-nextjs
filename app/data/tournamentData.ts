@@ -4,10 +4,10 @@ export const tournamentData = {
   dates: "May 9 & 10, 2026",
   location: "Mishawaka, IN",
   hostedBy: "Inside Out Volleyball Club",
-  ageGroups: "Girls 11-18",
+  ageGroups: "Girls 12-18",
   entryFees: {
     older: { age: "13-18's", cost: "$500.00" },
-    younger: { age: "11-12's", cost: "$425.00" },
+    younger: { age: "12's", cost: "$425.00" },
   },
   entryDeadline: "April 14, 2026 (POSTMARK)",
   registrationUrl: "https://advancedeventsystems.com/41952",

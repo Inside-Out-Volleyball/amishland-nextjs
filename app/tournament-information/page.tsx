@@ -12,7 +12,7 @@ export default function TournamentInformation() {
       <Navbar />
       <PageHeader
         title="Tournament Information"
-        subtitle="April 25 & 26, 2026 · Michigan"
+        subtitle={`${tournamentData.dates} · ${tournamentData.location}`}
       />
 
       <main className="max-w-4xl mx-auto px-4 py-12">
