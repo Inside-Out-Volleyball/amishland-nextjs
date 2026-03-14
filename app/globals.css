@@ -1,8 +1,83 @@
 @import "tailwindcss";
 
+/* ┌─────────────────────────────────────────────────────────────┐
+   │              SITE THEME — EDIT HERE                        │
+   │                                                            │
+   │  To change the accent colour:                             │
+   │    1. Comment out the active palette block below          │
+   │    2. Uncomment the palette you want instead              │
+   │                                                            │
+   │  Available palettes: pink, purple                         │
+   │  (Add more by copying any block and swapping the values)  │
+   └─────────────────────────────────────────────────────────────┘ */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Base font / body text colour */
+  --text-body: #374151;
+
+  /* Header banner gradient — edit stops or direction here to change the
+     PageHeader background across every page. Uses brand colours by default
+     so it automatically follows whichever palette is active above. */
+  --header-gradient: linear-gradient(to right, var(--brand-400), var(--brand-600), var(--brand-800));
+
+  /* ── ACTIVE PALETTE: PINK ───────────────────────────────────── */
+  /* --brand-50:  #fdf2f8;
+  --brand-100: #fce7f3;
+  --brand-200: #fbcfe8;
+  --brand-300: #f9a8d4;
+  --brand-400: #f472b6;
+  --brand-500: #ec4899;
+  --brand-600: #db2777;
+  --brand-700: #be185d;
+  --brand-800: #9d174d;
+  --brand-900: #831843;
+  --brand-950: #500724; */
+
+  /* ── PALETTE: PURPLE (comment out pink above, uncomment below) ─ */
+  --brand-50:  #faf5ff;
+  --brand-100: #f3e8ff;
+  --brand-200: #e9d5ff;
+  --brand-300: #d8b4fe;
+  --brand-400: #c084fc;
+  --brand-500: #a855f7;
+  --brand-600: #9333ea;
+  --brand-700: #7e22ce;
+  --brand-800: #6b21a8;
+  --brand-900: #581c87;
+  --brand-950: #3b0764;
+
+  /* ── PALETTE: BLUE (comment out pink above, uncomment below) ───
+  --brand-50:  #eff6ff;
+  --brand-100: #dbeafe;
+  --brand-200: #bfdbfe;
+  --brand-300: #93c5fd;
+  --brand-400: #60a5fa;
+  --brand-500: #3b82f6;
+  --brand-600: #2563eb;
+  --brand-700: #1d4ed8;
+  --brand-800: #1e40af;
+  --brand-900: #1e3a8a;
+  --brand-950: #172554;
+  ── */
+}
+
+/* Wire Tailwind's built-in pink scale to the brand variables above.
+   Every pink-* utility across every page will automatically reflect
+   any changes made to the --brand-* values in :root. */
+@theme {
+  --color-pink-50:  var(--brand-50);
+  --color-pink-100: var(--brand-100);
+  --color-pink-200: var(--brand-200);
+  --color-pink-300: var(--brand-300);
+  --color-pink-400: var(--brand-400);
+  --color-pink-500: var(--brand-500);
+  --color-pink-600: var(--brand-600);
+  --color-pink-700: var(--brand-700);
+  --color-pink-800: var(--brand-800);
+  --color-pink-900: var(--brand-900);
+  --color-pink-950: var(--brand-950);
 }
 
 @theme inline {
@@ -21,6 +96,10 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text-body);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-header-gradient {
+  background-image: var(--header-gradient);
 }
