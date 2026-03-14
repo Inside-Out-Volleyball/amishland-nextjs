@@ -9,7 +9,7 @@ type PageHeaderProps = {
 
 export default function PageHeader({ title, subtitle, withSlider = false }: PageHeaderProps) {
   return (
-    <header className={`relative overflow-hidden text-white shadow-lg ${withSlider ? 'bg-gray-900' : 'bg-linear-to-r from-pink-400 via-pink-600 to-pink-800'}`}>
+    <header className={`relative overflow-hidden text-white shadow-lg ${withSlider ? 'bg-gray-900' : 'bg-header-gradient'}`}>
       {withSlider ? (
         <>
           <div className="absolute inset-0" aria-hidden="true">
@@ -20,18 +20,18 @@ export default function PageHeader({ title, subtitle, withSlider = false }: Page
       ) : (
         <div className="absolute inset-0 opacity-30" aria-hidden="true">
           <div className="absolute -left-20 top-[-10%] h-64 w-64 rounded-full bg-pink-400 blur-3xl"></div>
-          <div className="absolute right-[-5%] top-1/4 h-72 w-72 rounded-full bg-rose-500 blur-3xl"></div>
+          <div className="absolute right-[-5%] top-1/4 h-72 w-72 rounded-full bg-pink-500 blur-3xl"></div>
         </div>
       )}
 
       <div className="relative max-w-6xl mx-auto px-4 py-10 md:py-14 text-center">
         <div className="mx-auto mb-5 md:mb-6 flex justify-center">
-          <div className="relative w-32 h-32 md:w-40 md:h-40 drop-shadow-2xl">
+          <div className="relative w-40 h-40 md:w-52 md:h-52 drop-shadow-2xl">
             <Image
               src="/amishland_logo.png"
               alt="Amishland Grand Prix 2026"
               fill
-              sizes="(max-width: 768px) 128px, 160px"
+              sizes="(max-width: 768px) 160px, 208px"
               className="object-contain"
               priority
             />

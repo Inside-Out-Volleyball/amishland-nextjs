@@ -28,6 +28,7 @@ export default function Home() {
             link="https://iplexsports.com/event/B7JjrCbAJzMRVcDH"
           />
           <Card title="Locations" link="/locations" />
+          <Card title="Event Apparel" link={`${tournamentData.merchUrl}`} />
           {/* <Card title="Livestream" link="/livestream" /> */}
         </div>
 

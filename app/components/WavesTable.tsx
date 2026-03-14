@@ -52,7 +52,7 @@ export default function WavesTable() {
         </table>
       </div>
       <p className="text-sm text-gray-600">
-        Sunday play schedule and location are based on your team’s finish on Saturday. Playing sites are announced closer to the event.
+        Sunday play schedule and location are based on your team’s finish on Saturday.
       </p>
     </>
   );
