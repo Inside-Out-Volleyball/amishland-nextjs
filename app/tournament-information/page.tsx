@@ -268,6 +268,32 @@ export default function TournamentInformation() {
           </div>
         </section>
 
+        {/* Event Apparel Section */}
+
+        <section
+          id="event-apparel"
+          className="bg-white border-2 border-pink-200 rounded-xl shadow-xl p-8 mb-12 scroll-mt-20"
+        >
+          <h2 className="text-2xl md:text-3xl font-bold text-pink-900 mb-6">
+            Event Apparel
+          </h2>
+          <a
+            href={tournamentData.merchUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 block w-full max-w-md"
+            aria-label="Open Amishland event apparel store"
+          >
+            <Image
+              src="/amishland_store.jpg"
+              alt="Amishland event apparel store"
+              width={800}
+              height={800}
+              className="h-auto w-full rounded-lg border-2 border-pink-200 shadow-md transition-transform duration-200 hover:scale-[1.01]"
+            />
+          </a>
+        </section>
+
         {/* AAU Information Section */}
         <section
           id="aau-information"
