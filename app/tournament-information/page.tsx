@@ -17,7 +17,7 @@ export default function TournamentInformation() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         {/* Quick Navigation Links */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
           <Link
             href="#schedule"
             className="block p-4 bg-white border-2 border-pink-200 rounded-lg hover:shadow-lg hover:border-pink-400 transition-all text-center"
@@ -47,6 +47,19 @@ export default function TournamentInformation() {
             </div>
             <div className="text-sm text-gray-600">Get in touch with us</div>
           </Link>
+          <a
+            href={tournamentData.infoGuide}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block p-4 bg-white border-2 border-pink-200 rounded-lg hover:shadow-lg hover:border-pink-400 transition-all text-center"
+          >
+            <div className="text-lg font-bold text-pink-900 mb-1">
+              Info Guide
+            </div>
+            <div className="text-sm text-gray-600">
+              Tournament Information Guide (PDF)
+            </div>
+          </a>
         </div>
 
         {/* Tournament Details Section */}
@@ -158,6 +171,37 @@ export default function TournamentInformation() {
                 {tournamentData.entryFeesPayableTo}
               </div>
             </div>
+          </div>
+
+          <div className="flex justify-center">
+            <a
+              href={tournamentData.infoGuide}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-pink-600 text-white font-semibold hover:bg-pink-700 transition-colors"
+            >
+              Tournament Information Guide
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M14 3h7m0 0v7m0-7L10 14"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 5v14h14"
+                />
+              </svg>
+            </a>
           </div>
         </section>
 
