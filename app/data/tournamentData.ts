@@ -16,4 +16,5 @@ export const tournamentData = {
   entryFeesPayableTo: "Inside Out Volleyball",
   hotelUrl: "https://app.eventconnect.io/events/38403/hotels?nav=hidden",
   merchUrl: "https://shop.finedesigns.com/midland/mishawakamayhemaau/",
+  scheduleUrl: "https://results.advancedeventsystems.com/event/PTAwMDAwNDE5NTI90/home",
 };
