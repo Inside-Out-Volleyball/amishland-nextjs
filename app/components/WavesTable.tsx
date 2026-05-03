@@ -20,7 +20,7 @@ export default function WavesTable() {
             <tr>
               <th className="px-3 py-2 border-b border-pink-200">Division</th>
               <th className="px-3 py-2 border-b border-pink-200">Start Time (Saturday)</th>
-              <th className="px-3 py-2 border-b border-pink-200">Location</th>
+              <th className="px-3 py-2 border-b border-pink-200">Saturday Location</th>
             </tr>
           </thead>
           <tbody>
