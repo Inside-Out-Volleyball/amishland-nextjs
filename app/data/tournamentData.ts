@@ -17,4 +17,5 @@ export const tournamentData = {
   hotelUrl: "https://app.eventconnect.io/events/38403/hotels?nav=hidden",
   merchUrl: "https://shop.finedesigns.com/midland/mishawakamayhemaau/",
   scheduleUrl: "https://results.advancedeventsystems.com/event/PTAwMDAwNDE5NTI90/home",
+  infoGuide: "https://mum8dcbdl3prlupf.public.blob.vercel-storage.com/tournament-guide/2026%20Mishawaka%20Tournament%20Information%20Guide.pdf"
 };
