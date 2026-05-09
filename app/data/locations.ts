@@ -33,7 +33,7 @@ export const locations: Location[] = [
     addressLines: ["453 N Notre Dame Ave", "South Bend, IN 46617"],
     seatingAvailable: true,
     seatingText: "Bleachers – NO outside chairs",
-    apparel: false,
+    apparel: true,
     concessions: true,
   },
   {
@@ -42,7 +42,7 @@ export const locations: Location[] = [
     addressLines: ["1001 Bethel Cir", "Mishawaka, IN 46545"],
     seatingAvailable: true,
     seatingText: "Bleachers - NO outside chairs",
-    apparel: false,
+    apparel: true,
     concessions: true,
   },
 ];
