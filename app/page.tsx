@@ -19,7 +19,8 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 mt-8">
           <Card title="Tournament Information" link="/tournament-information" />
           {/* <Card title="Schedule" link="/tournament-information#schedule" /> */}
-          <Card title="AES Schedule" link={`${tournamentData.scheduleUrl}`} />
+          <Card title="Registration" link={`${tournamentData.registrationUrl}`} />
+          <Card title="2026 Schedule" link={`${tournamentData.scheduleUrl}`} />
           <Card
             title="Hotel Information"
             link={`${tournamentData.hotelUrl}`}
@@ -29,7 +30,7 @@ export default function Home() {
             link="https://iplexsports.com/event/B7JjrCbAJzMRVcDH"
           />
           <Card title="Locations" link="/locations" />
-          <Card title="Event Apparel" link={`${tournamentData.merchUrl}`} />
+          {/* <Card title="Event Apparel" link={`${tournamentData.merchUrl}`} /> */}
           {/* <Card title="Livestream" link="/livestream" /> */}
         </div>
 
